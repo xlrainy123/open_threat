@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET		/paramtest/				controllers.IBMData.paramTest
+GET    /getIp/                  controllers.IBMData.getIp 
+GET    /test/					controllers.IBMData.test
+GET    /interface/ibm/getip/		controllers.IBMData.getIp2Category
+GET    /interface/ip/getIpInfo/     controllers.IBMData.getIpInfo
+GET		/interface/ip/save/          controllers.IBMData.saveIpFromTxt
+GET    /test3/					controllers.IBMData.getIp2Category
+GET    /test4/					controllers.IBMData.getMalware
+GET    /ibm/getIpReport/        controllers.IBMData.ipReport
+GET   /test5/					controllers.VirustotalData.getIpReport
+
+GET   /test6/                   controllers.CymonData.getIpReport
+
+GET   /clickme/					controllers.CymonData.clickme

@@ -1,0 +1,24 @@
+@(ips:List[models.IP])
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>ip</th>
+			<th>score</th>
+			<th>category</th>
+		</tr>
+		@for(ip <- ips){
+			<tr>
+			<th>@ip.ip</th>
+			<th>@ip.score</th>
+			<th>@ip.category</th>
+		</tr>
+		}
+	</table>
+</body>
+</html>
